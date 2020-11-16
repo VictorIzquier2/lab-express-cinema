@@ -1,0 +1,14 @@
+<div class="movies-header">
+  <h2>Cinema</h2>
+  <p>To check the showtime click on the movie</p>
+</div>
+<div class="container">
+    {{#each movies}}
+      <div class="movie">
+        <img class="movie-img" src="{{image}}" alt="{{name}}">
+        <h2>{{title}}</h2>
+        <a href="/movie/{{id}}">Watch more</a>
+      </div>
+    {{/each}}
+
+</div>
